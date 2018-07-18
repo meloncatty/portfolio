@@ -6,7 +6,7 @@ const styles = {
   avatar: {
     width: 150,
     height: 150,
-    marginBottom: 10
+    margin: 20
   },
   paper: {
     width: 350,
@@ -15,7 +15,6 @@ const styles = {
   },
   grid: {
     height: '100vh',
-    width: '100vw'
   }
 }
 
@@ -32,7 +31,8 @@ const Intro = (props) => {
         justify='center'>
         <Grid item>
           <Paper 
-            className={classes.grid}
+            className={classes.paper}
+            align='center'
             style={{ background: props.theme.palette.secondary.main }}>
             <Avatar 
               className={classes.avatar}
