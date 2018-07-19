@@ -9,8 +9,9 @@ const styles = {
 
 const SplashPage = (props) => {
   const { classes } = props
+
   return (
-    <MuiThemeProvider>
+    <MuiThemeProvider theme={props.theme}>
       <Grid
         container
         style={{ background: props.theme.palette.primary.main }}
@@ -19,13 +20,13 @@ const SplashPage = (props) => {
         justify='center'
         className={classes.grid}>
         <Grid item>
-          <Typography variant='subheading' style={{ color: props.theme.palette.text.secondary }}>
+          <Typography variant='subheading' style={{ color: '#000' }}>
             Greetings!
           </Typography>
-          <Typography variant='display1' style ={{ color: props.theme.palette.text.primary}}>
+          <Typography variant='display1' style ={{ color: '#000' }}>
             I'm Krista Handel
           </Typography>
-          <Typography variant='subheading' style={{ color: props.theme.palette.text.secondary }}>
+          <Typography variant='subheading' style={{ color: '#000' }}>
             Front-end Developer ~ Aspiring Technical Writer
           </Typography>
         </Grid>  
