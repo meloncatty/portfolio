@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, withStyles } from '@material-ui/core'
+import { Grid, withStyles, MuiThemeProvider, withTheme } from '@material-ui/core'
 
 const styles = {
   lineNumber: {
@@ -38,7 +38,12 @@ const styles = {
 const Skills = (props) => {
   const { classes } = props
   return (
-    <Grid className={classes.grid} container justify='center' alignItems='center'>
+    <MuiThemeProvider theme={props.theme}>
+      <Grid
+      className={classes.grid}
+      container justify='center'
+      alignItems='center'
+      style={{ background: props.theme.palette.primary.main }}>
       <Grid item>
         <pre className={classes.pre}>
           <ul className={classes.ul}>
@@ -64,7 +69,8 @@ const Skills = (props) => {
         </pre>
       </Grid>
     </Grid>
+    </MuiThemeProvider>
   )
 }
 
-export default withStyles(styles)(Skills)
+export default withTheme()(withStyles(styles)(Skills))
