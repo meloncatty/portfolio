@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, withStyles, MuiThemeProvider, withTheme } from '@material-ui/core'
+import { Grid, withStyles, MuiThemeProvider, withTheme, Typography } from '@material-ui/core'
 
 const styles = {
   lineNumber: {
@@ -17,7 +17,7 @@ const styles = {
     padding: 10,
     fontSize: '1.2em',
     color: '#dcdcdc',
-    height: 320
+    height: 335
   },
   code: {
     color: '#0072be',
@@ -31,7 +31,10 @@ const styles = {
     padding: 0,
   },
   grid: {
-    height: 800
+    height: 600
+  },
+  heading: {
+    color: '#000000'
   }
 }
 
@@ -42,8 +45,12 @@ const Skills = (props) => {
       <Grid
       className={classes.grid}
       container justify='center'
+      direction='column'
       alignItems='center'
       style={{ background: props.theme.palette.primary.main }}>
+      <Typography className={classes.heading} variant='display1'>
+        Skills
+      </Typography>
       <Grid item>
         <pre className={classes.pre}>
           <ul className={classes.ul}>
