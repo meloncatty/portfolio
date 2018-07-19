@@ -17,7 +17,7 @@ const styles = {
     padding: 10,
     fontSize: '1.2em',
     color: '#dcdcdc',
-    height: 300
+    height: 320
   },
   code: {
     color: '#0072be',
@@ -52,12 +52,14 @@ const Skills = (props) => {
             <li><span className={classes.lineNumber}>8</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Pair Programming<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
             <li><span className={classes.lineNumber}>9</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Git+GitHub<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
             <li><span className={classes.lineNumber}>10</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Webpack<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>11</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Mocha/Chai<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
+            <li><span className={classes.lineNumber}>11</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Mocha + Chai<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
             <li><span className={classes.lineNumber}>12</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Jest/Enzyme<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
             <li><span className={classes.lineNumber}>13</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>SASS<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>14</span>  <span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>ul</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>15</span> <span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>body</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>16</span><span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>html</span><span className={classes.forward}>&gt;</span></li>
+            <li><span className={classes.lineNumber}>14</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>PostgreSQL<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
+            <li><span className={classes.lineNumber}>15</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Express + knex<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
+            <li><span className={classes.lineNumber}>16</span>  <span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>ul</span><span className={classes.forward}>&gt;</span></li>
+            <li><span className={classes.lineNumber}>17</span> <span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>body</span><span className={classes.forward}>&gt;</span></li>
+            <li><span className={classes.lineNumber}>18</span><span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>html</span><span className={classes.forward}>&gt;</span></li>
           </ul>
         </pre>
       </Grid>
