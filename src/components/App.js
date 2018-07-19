@@ -1,6 +1,6 @@
 import React from 'react'
 import { createMuiTheme, withTheme, MuiThemeProvider } from '@material-ui/core'
-import { SplashPage, Intro } from '../components'
+import { SplashPage, Intro, Projects } from '../components'
 
 const theme = createMuiTheme({
   palette: {
@@ -18,6 +18,7 @@ const App = () => {
     <MuiThemeProvider theme={theme}>
       <SplashPage />
       <Intro />
+      <Projects />
     </MuiThemeProvider>
   )
 }

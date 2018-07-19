@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Grid, Card, Typography, CardActions, CardContent, CardMedia, Button, withStyles } from '@material-ui/core'
 import movieTracker from '../assets/movieTracker.jpg'
 import swapiBox from '../assets/swapiBox.png'
@@ -7,93 +7,97 @@ import searchOpenSource from '../assets/searchOpenSource.png'
 const styles = {
   root: {
     flexGrow: 1,
-    height: 800
+    paddingBottom: 40
   },
   card: {
-    maxWidth: 345,
+    width: 345,
     marginTop: 20,
+    height: 300,
   },
   media: {
     height: 0,
     paddingTop: '56.25%'
   },
+  heading: {
+    padding: 30,
+    color: '#000000'
+  }
 }
 
 const Projects = (props) => {
   const { classes } = props
   return (
-    <Grid 
-      container
-      className={classes.root}
-      justify='space-around'
-      alignItems='center'>
-      <Grid item>
-        <Card className={classes.card}>
-          <CardMedia
-            className={classes.media}
-            image={movieTracker}
-            title='Movie Tracker'
-          />
-          <CardContent>
-            <Typography variant='headline' component='h2'>
-              Movie Tracker
-          </Typography>
-            <Typography component='p'>
-              This project presented a host of new challenges, from working with a backend through PostgreSQL to managing a Redux store. These challenges proved to be a great learning experience as we began to see the benefit of using the store to manage our users and to persist data without making constant API requests.
-          </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size='small' color='primary'>
-              Github
-          </Button>
-          </CardActions>
-        </Card>
-      </Grid>
-      <Grid item>
-        <Card className={classes.card}>
-          <CardMedia
-            className={classes.media}
-            image={swapiBox}
-            title='SWAPI-Box'
-          />
-          <CardContent>
-            <Typography gutterBottom variant='headline' component='h2'>
-              SWAPI-Box
+    <Fragment>
+      <Typography 
+        className={classes.heading}
+        align='center'
+        variant='display1'>
+        Projects
+      </Typography>
+      <Grid 
+        container
+        className={classes.root}
+        justify='space-around'
+        alignItems='center'>
+        <Grid item>
+          <Card className={classes.card}>
+            <CardMedia
+              className={classes.media}
+              image={movieTracker}
+              title='Movie Tracker'
+            />
+            <CardContent>
+              <Typography variant='headline' component='h2'>
+                Movie Tracker
             </Typography>
-            <Typography component='p'>
-              This was a fun introduction to getting comfortable with using Redux's store and creating user functionality. This project made me realize where my skills were lacking with testing, and I based future project tests off of this knowledge.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size='small' color='primary'>
-              Github
+            </CardContent>
+            <CardActions>
+              <Button size='small' color='primary'>
+                Github
             </Button>
-          </CardActions>
-        </Card>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item>
+          <Card className={classes.card}>
+            <CardMedia
+              className={classes.media}
+              image={swapiBox}
+              title='SWAPI-Box'
+            />
+            <CardContent>
+              <Typography gutterBottom variant='headline' component='h2'>
+                SWAPI-Box
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size='small' color='primary'>
+                Github
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item>
+          <Card className={classes.card}>
+            <CardMedia
+              className={classes.media}
+              image={searchOpenSource}
+              title='Share Open Source'
+            />
+            <CardContent>
+              <Typography gutterBottom variant='headline' component='h2'>
+                Share Open Source
+            </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size='small' color='primary'>
+                Github
+            </Button>
+            </CardActions>
+          </Card>
+        </Grid>
       </Grid>
-      <Grid item>
-        <Card className={classes.card}>
-          <CardMedia
-            className={classes.media}
-            image={searchOpenSource}
-            title='Share Open Source'
-          />
-          <CardContent>
-            <Typography gutterBottom variant='headline' component='h2'>
-              Share Open Source
-          </Typography>
-            <Typography component='p'>
-              My plans for this application were simple, but the more the application grew the more difficult things became. Implementing Firebase proved to be a challenge. But at the end of it all I was happy with my MVP and my learning outcomes: setting up and using Firebase as well as finding an interest in integration testing versus unit testing.
-          </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size='small' color='primary'>
-              Github
-          </Button>
-          </CardActions>
-        </Card>
-      </Grid>
-    </Grid>
+    </Fragment>
   )
 }
 
