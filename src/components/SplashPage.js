@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Typography, MuiThemeProvider, withStyles, Grid, withTheme } from '@material-ui/core'
 
 const styles = {
@@ -12,6 +12,7 @@ const SplashPage = (props) => {
 
   return (
     <MuiThemeProvider theme={props.theme}>
+      <Fragment>
       <Grid
         container
         style={{ background: props.theme.palette.primary.main }}
@@ -31,6 +32,7 @@ const SplashPage = (props) => {
           </Typography>
         </Grid>  
       </Grid>
+      </Fragment>
     </MuiThemeProvider>
   )
 }
