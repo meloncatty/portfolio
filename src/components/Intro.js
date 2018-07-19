@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, Grid, Avatar, Typography, withStyles, withTheme, MuiThemeProvider } from '@material-ui/core'
+import { Grid, Avatar, Typography, withStyles, withTheme, MuiThemeProvider } from '@material-ui/core'
 import avatar from '../assets/avatar.jpg'
 
 const styles = {
@@ -14,7 +14,7 @@ const styles = {
     padding: 10
   },
   grid: {
-    height: '100vh',
+    height: '50vh',
   }
 }
 
@@ -28,12 +28,11 @@ const Intro = (props) => {
         className={classes.grid}
         alignItems='center'
         align='center'
-        justify='center'>
-        <Grid item>
-          <Paper 
-            className={classes.paper}
-            align='center'
-            style={{ background: props.theme.palette.secondary.main }}>
+        justify='center'
+        style={{ background: props.theme.palette.secondary.main }}>
+        <Grid 
+          item
+          align='center'>
             <Avatar 
               className={classes.avatar}
               src={avatar}
@@ -41,7 +40,6 @@ const Intro = (props) => {
             <Typography>
               I am a Turing School of Software and Design graduate of the front-end program.
             </Typography>
-          </Paper>
         </Grid>
       </Grid>
     </MuiThemeProvider>
