@@ -30,16 +30,14 @@ const Intro = (props) => {
         align='center'
         justify='center'
         style={{ background: props.theme.palette.secondary.main }}>
-        <Grid 
-          item
-          align='center'>
-            <Avatar 
-              className={classes.avatar}
-              src={avatar}
-              alt='Profile image'/>
-            <Typography>
-              I am a Turing School of Software and Design graduate of the front-end program.
-            </Typography>
+        <Grid item>
+          <Avatar 
+            className={classes.avatar}
+            src={avatar}
+            alt='Profile image'/>
+          <Typography>
+            I am a Turing School of Software and Design graduate of the front-end program.
+          </Typography>
         </Grid>
       </Grid>
     </MuiThemeProvider>
