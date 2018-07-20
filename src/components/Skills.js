@@ -34,7 +34,8 @@ const styles = {
     height: 600
   },
   heading: {
-    color: '#000000'
+    color: '#000000',
+    paddingTop: 40,
   }
 }
 
@@ -42,15 +43,19 @@ const Skills = (props) => {
   const { classes } = props
   return (
     <MuiThemeProvider theme={props.theme}>
+      <Typography
+        className={classes.heading}
+        variant='display1'
+        align='center'
+        style={{ background: props.theme.palette.primary.main}}>
+        Skills
+      </Typography>
       <Grid
       className={classes.grid}
       container justify='center'
       direction='column'
       alignItems='center'
       style={{ background: props.theme.palette.primary.main }}>
-      <Typography className={classes.heading} variant='display1'>
-        Skills
-      </Typography>
       <Grid item>
         <pre className={classes.pre}>
           <ul className={classes.ul}>
