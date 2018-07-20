@@ -7,7 +7,8 @@ import searchOpenSource from '../assets/searchOpenSource.png'
 const styles = {
   root: {
     flexGrow: 1,
-    paddingBottom: 40
+    paddingBottom: 40,
+    height: 500
   },
   card: {
     width: 345,
