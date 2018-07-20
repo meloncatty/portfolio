@@ -31,7 +31,7 @@ const styles = {
     padding: 0,
   },
   grid: {
-    height: 600
+    height: 500
   },
   heading: {
     color: '#000000',
