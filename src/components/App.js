@@ -5,10 +5,10 @@ import { SplashPage, Intro, Projects, Skills } from '../components'
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#6A2F5D'
+      main: '#D3AB9E'
     },
     secondary: {
-      main: '#9E6083'
+      main: '#e6dcdc'
     }
   }
 })

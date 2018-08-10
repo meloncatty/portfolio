@@ -1,41 +1,100 @@
 import React from 'react'
 import { Grid, withStyles, MuiThemeProvider, withTheme, Typography } from '@material-ui/core'
+import '../styles/skillsAnimation.css'
 
 const styles = {
-  lineNumber: {
-    counterIncrement: 'linecounter',
-    width: '1.2em',
-    display: 'inline-block',
-    borderRight: '1px solid #444',
-    textAlign: 'center',
-    color: '#444'
-  },
-  pre: {
-    border: '1px solid #444',
-    width: 400,
-    background: '#222',
-    padding: 10,
-    fontSize: '1.2em',
-    color: '#dcdcdc',
-    height: 335
-  },
-  code: {
-    color: '#0072be',
-  },
-  forward: {
-    color: '#676769',
-  },
-  ul: {
-    listStyle: 'none',
-    margin: 0,
-    padding: 0,
-  },
   grid: {
     height: 500
   },
   heading: {
     color: '#000000',
     paddingTop: 40,
+  },
+  green: {
+    color: '#43a047',
+  },
+  closeButton: {
+    height: '10px',
+    width: '10px',
+    borderRadius: '50%',
+    border: '1px solid #000',
+    position: 'relative',
+    top: '6px',
+    left: '6px',
+    backgroundColor: '#ff3b47',
+    borderColor: '#9d252b',
+    display: 'inline-block'
+  },
+  minimizeButton: {
+    height: '10px',
+    width: '10px',
+    borderRadius: '50%',
+    border: '1px solid #000',
+    position: 'relative',
+    top: '6px',
+    left: '11px',
+    backgroundColor: '#ffc100',
+    borderColor: '#9d802c',
+    display: 'inline-block'
+  },
+  zoomButton: {
+    height: '10px',
+    width: '10px',
+    borderRadius: '50%',
+    border: '1px solid #000',
+    position: 'relative',
+    top: '6px',
+    left: '16px',
+    backgroundColor: '#00d742',
+    borderColor: '#049931',
+    display: 'inline-block'
+  },
+  menuBar: {
+    width: '550px',
+    boxSizing: 'border-box',
+    height: '25px',
+    backgroundColor: '#bbb',
+    margin: '0 auto',
+    borderTopRightRadius: '5px',
+    borderTopLeftRadius: '5px'
+  },
+  terminalScreen: {
+    backgroundColor: '#151515',
+    boxSizing: 'border-box',
+    width: '550px',
+    margin: '0 auto',
+    padding: '20px',
+    borderBottomLeftRadius: '5px',
+    borderBottomRightRadius: '5px'
+  },
+  p: {
+    position: 'relative',
+    left: '50%',
+    marginLeft: '-8.5em',
+    textAlign: 'left',
+    fontSize: '1.25em',
+    fontFamily: 'monospace',
+    whiteSpace: 'normal',
+    overflow: 'hidden',
+  },
+  span: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  text: {
+    color: '#cdee69'
+  },
+  skills: {
+    color: '#e09690',
+    overflow: 'auto',
+    letterSpacing: '1px',
+    listStyle: 'none',
+    padding: 0,
+    margin: 0,
+    marginRight: 20
+  },
+  cursor: {
+    color: '#fff'
   }
 }
 
@@ -47,40 +106,58 @@ const Skills = (props) => {
         className={classes.heading}
         variant='display1'
         align='center'
-        style={{ background: props.theme.palette.primary.main}}>
+        style={{ background: props.theme.palette.primary.main }}>
         Skills
       </Typography>
       <Grid
-      className={classes.grid}
-      container justify='center'
-      direction='column'
-      alignItems='center'
-      style={{ background: props.theme.palette.primary.main }}>
-      <Grid item>
-        <pre className={classes.pre}>
-          <ul className={classes.ul}>
-            <li><span className={classes.lineNumber}>1</span> <span className={classes.forward}><span className={classes.forward}>&lt;</span></span><span className={classes.code}>html</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>2</span>  <span className={classes.forward}>&lt;</span><span className={classes.code}>head</span><span className={classes.forward}>&gt;</span><span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>head</span><span className={classes.forward}><span className={classes.forward}>&gt;</span></span></li>
-            <li><span className={classes.lineNumber}>3</span> <span className={classes.forward}>  &lt;</span><span className={classes.code}>body</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>4</span>  <span className={classes.forward}> &lt;</span><span className={classes.code}>ul</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>5</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Javascript<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>6</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>React<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>7</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Redux<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>8</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Pair Programming<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>9</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Git+GitHub<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>10</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Webpack<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>11</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Mocha + Chai<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>12</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Jest/Enzyme<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>13</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>SASS<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>14</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>PostgreSQL<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>15</span>   <span className={classes.forward}> &lt;</span><span className={classes.code}>li</span><span className={classes.forward}>&gt;</span>Express + knex<span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>li</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>16</span>  <span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>ul</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>17</span> <span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>body</span><span className={classes.forward}>&gt;</span></li>
-            <li><span className={classes.lineNumber}>18</span><span className={classes.forward}>&lt;</span><span className={classes.code}><span className={classes.forward}>/</span>html</span><span className={classes.forward}>&gt;</span></li>
-          </ul>
-        </pre>
+        className={classes.grid}
+        container justify='center'
+        direction='column'
+        alignItems='center'
+        style={{ background: props.theme.palette.primary.main }}>
+        <Grid item>
+          <div className={classes.menuBar}>
+            <div className={classes.closeButton}></div>
+            <div className={classes.minimizeButton}></div>
+            <div className={classes.zoomButton}></div>
+          </div>
+          <div className={classes.terminalScreen}>
+            <p><span className={classes.green}>(^‿^)b</span><span className={classes.span}> ~ always be coding</span> </p>
+            <p className={classes.text}>desktop$ cd skills</p>
+            <p className={classes.text}>skills$ ls</p>
+            <Grid container>
+              <Grid item>
+                <ul className={classes.skills}>
+                  <li>javascript</li>
+                  <li>html5</li>
+                  <li>css3</li>
+                  <li>sass</li>
+                  <li>git</li>
+                </ul>
+              </Grid>
+              <Grid item>
+                <ul className={classes.skills}>
+                  <li>react</li>
+                  <li>redux</li>
+                  <li>node</li>
+                  <li>express</li>
+                  <li>knex</li>
+                </ul>
+              </Grid>
+              <Grid item>
+                <ul className={classes.skills}>
+                  <li>postgresql</li>
+                  <li>jest</li>
+                  <li>enzyme</li>
+                  <li>mocha</li>
+                  <li>chai</li>
+                </ul>
+              </Grid>
+            </Grid>
+            <p className={classes.cursor}>><span className="cursorBlink">_</span></p>
+          </div>
+        </Grid>
       </Grid>
-    </Grid>
     </MuiThemeProvider>
   )
 }
