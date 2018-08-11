@@ -4,27 +4,6 @@ import movieTracker from '../assets/movieTracker.jpg'
 import swapiBox from '../assets/swapiBox.png'
 import searchOpenSource from '../assets/searchOpenSource.png'
 
-const styles = {
-  root: {
-    flexGrow: 1,
-    paddingBottom: 40,
-    height: 500
-  },
-  card: {
-    width: 345,
-    marginTop: 20,
-    height: 300
-  },
-  media: {
-    height: 0,
-    paddingTop: '56.25%'
-  },
-  heading: {
-    padding: 30,
-    color: '#000000'
-  }
-}
-
 const Projects = (props) => {
   const { classes } = props
   return (
@@ -100,6 +79,26 @@ const Projects = (props) => {
       </Grid>
     </Fragment>
   )
+}
+
+const styles = {
+  root: {
+    flexGrow: 1,
+    paddingBottom: 40,
+    height: 500
+  },
+  card: {
+    width: 345,
+    marginTop: 20,
+    height: 300
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%'
+  },
+  heading: {
+    padding: 30,
+  }
 }
 
 export default withStyles(styles)(Projects)
