@@ -3,7 +3,7 @@ import { Typography, MuiThemeProvider, withStyles, Grid, withTheme } from '@mate
 
 const SplashPage = (props) => {
   const { classes } = props
-  console.log(props.theme)
+  
   return (
     <MuiThemeProvider theme={props.theme}>
       <Fragment>
