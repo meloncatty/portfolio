@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Avatar, Grid, Typography, Card, CardHeader, CardMedia, CardActions, Collapse, IconButton, CardContent, withStyles, withTheme, MuiThemeProvider } from '@material-ui/core'
+import { Avatar, Grid, Typography, Card, CardHeader, CardActions, Collapse, IconButton, CardContent, withStyles, withTheme, MuiThemeProvider } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import refinedGitHub from '../assets/refinedGithub.png'
 import classnames from 'classnames';
@@ -67,15 +67,15 @@ class OpenSource extends Component {
                   </Typography>
                   <Typography paragraph>
                     You can read more about my first experience with contributing to open
-                    source <a href="https://medium.com/@petalhead/my-first-open-source-contribution-a9865801a3ca" target="_blank">
+                    source <a href="https://medium.com/@petalhead/my-first-open-source-contribution-a9865801a3ca" target="_blank" rel="noopener noreferrer">
                     here</a>
                   </Typography>
                   <Typography>
                     Althought this feature was approved and merged into the master branch,
-                    it has since been removed <span className={classes.emoji}>😭</span> but not without good reason! GitHub has since then
+                    it has since been removed <span role='img' aria-label='crying emoji' className={classes.emoji}>😭</span> but not without good reason! GitHub has since then
                     implemented the feature into their product. GitHub has also reached
                     out to this community and has offered to work with them in implementing
-                    some of Refined GitHub's features into GitHub as a whole <span className={classes.emoji}>🎉</span> More info <a href="https://github.com/sindresorhus/refined-github/issues/1469" target="_blank">
+                    some of Refined GitHub's features into GitHub as a whole <span role='img' aria-label='confetti emoji' className={classes.emoji}>🎉</span> More info <a href="https://github.com/sindresorhus/refined-github/issues/1469" target="_blank" rel="noopener noreferrer">
                     here</a>
                   </Typography>
                 </CardContent>
