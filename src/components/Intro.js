@@ -14,7 +14,7 @@ const styles = {
     padding: 10
   },
   grid: {
-    height: '50vh',
+    height: '50vh'
   }
 }
 
@@ -31,10 +31,10 @@ const Intro = (props) => {
         justify='center'
         style={{ background: props.theme.palette.secondary.main }}>
         <Grid item>
-          <Avatar 
+          <Avatar
             className={classes.avatar}
             src={avatar}
-            alt='Profile image'/>
+            alt='Profile image' />
           <Typography>
             I am a Turing School of Software and Design graduate of the front-end program.
           </Typography>

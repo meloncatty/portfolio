@@ -8,10 +8,9 @@ class Contact extends Component {
     super(props)
 
     this.state = {
-      name: '',
+      firstName: '',
       email: '',
-      error: false
-    };
+    }
   }
 
   handleChange = name => event => {
@@ -67,7 +66,6 @@ class Contact extends Component {
                   </Grid>
                   <Grid item className={classes.form}>
                   <TextField
-                    id="full-width"
                     label="Message"
                     multiline
                     rows="4"
