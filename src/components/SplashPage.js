@@ -15,7 +15,7 @@ const SplashPage = (props) => {
             <Typography variant='subheading' style={{ color: '#000', fontSize: '1.5em', marginLeft: 200 }}>
             Greetings!
             </Typography>
-            <Typography variant='display1' style={{ color: '#000', fontSize: '4em', marginLeft: 200}}>
+            <Typography variant='display1' style={{ color: '#000', fontSize: '4em', marginLeft: 200 }}>
             I'm Krista Handel
             </Typography>
             <Typography variant='subheading' style={{ color: '#000', fontSize: '1.5em', marginLeft: 200 }}>

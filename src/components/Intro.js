@@ -13,7 +13,7 @@ const Intro = (props) => {
         alignItems='center'
         align='center'
         justify='center'
-        >
+      >
         <Grid item>
           <Avatar
             className={classes.avatar}
@@ -28,7 +28,7 @@ const Intro = (props) => {
   )
 }
 
-const styles = theme =>  ({
+const styles = theme => ({
   avatar: {
     width: 150,
     height: 150,

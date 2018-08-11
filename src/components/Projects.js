@@ -97,7 +97,7 @@ const styles = {
     paddingTop: '56.25%'
   },
   heading: {
-    padding: 30,
+    padding: 30
   }
 }
 

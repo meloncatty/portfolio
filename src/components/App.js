@@ -12,7 +12,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: '"Roboto Mono", "IBM Plex Mono", monospace',
+    fontFamily: '"Roboto Mono", "IBM Plex Mono", monospace'
   }
 })
 
