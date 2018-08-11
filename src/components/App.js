@@ -10,6 +10,9 @@ const theme = createMuiTheme({
     secondary: {
       main: '#e6dcdc'
     }
+  },
+  typography: {
+    fontFamily: '"Roboto Mono", "IBM Plex Mono", monospace',
   }
 })
 
@@ -18,8 +21,8 @@ const App = () => {
     <MuiThemeProvider theme={theme}>
       <SplashPage />
       <Intro />
-      <Projects />
       <Skills />
+      <Projects />
       <Contact />
     </MuiThemeProvider>
   )
