@@ -8,10 +8,10 @@ const styles = {
   },
   heading: {
     color: '#000000',
-    paddingTop: 40,
+    paddingTop: 40
   },
   green: {
-    color: '#43a047',
+    color: '#43a047'
   },
   closeButton: {
     height: '10px',
@@ -75,11 +75,11 @@ const styles = {
     fontSize: '1.25em',
     fontFamily: 'monospace',
     whiteSpace: 'normal',
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   span: {
     color: '#fff',
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   text: {
     color: '#cdee69'
@@ -117,9 +117,9 @@ const Skills = (props) => {
         style={{ background: props.theme.palette.primary.main }}>
         <Grid item>
           <div className={classes.menuBar}>
-            <div className={classes.closeButton}></div>
-            <div className={classes.minimizeButton}></div>
-            <div className={classes.zoomButton}></div>
+            <div className={classes.closeButton} />
+            <div className={classes.minimizeButton} />
+            <div className={classes.zoomButton} />
           </div>
           <div className={classes.terminalScreen}>
             <p><span className={classes.green}>(^‿^)b</span><span className={classes.span}> ~ always be coding</span> </p>
@@ -154,7 +154,7 @@ const Skills = (props) => {
                 </ul>
               </Grid>
             </Grid>
-            <p className={classes.cursor}>><span className="cursorBlink">_</span></p>
+            <p className={classes.cursor}>><span className='cursorBlink'>_</span></p>
           </div>
         </Grid>
       </Grid>

@@ -13,25 +13,25 @@ const SplashPage = (props) => {
   return (
     <MuiThemeProvider theme={props.theme}>
       <Fragment>
-      <Grid
-        container
-        style={{ background: props.theme.palette.primary.main }}
-        alignItems='center'
-        align='center'
-        justify='center'
-        className={classes.grid}>
-        <Grid item>
-          <Typography variant='subheading' style={{ color: '#000' }}>
+        <Grid
+          container
+          style={{ background: props.theme.palette.primary.main }}
+          alignItems='center'
+          align='center'
+          justify='center'
+          className={classes.grid}>
+          <Grid item>
+            <Typography variant='subheading' style={{ color: '#000' }}>
             Greetings!
-          </Typography>
-          <Typography variant='display1' style ={{ color: '#000' }}>
+            </Typography>
+            <Typography variant='display1' style={{ color: '#000' }}>
             I'm Krista Handel
-          </Typography>
-          <Typography variant='subheading' style={{ color: '#000' }}>
+            </Typography>
+            <Typography variant='subheading' style={{ color: '#000' }}>
             Front-end Developer ~ Aspiring Technical Writer
-          </Typography>
-        </Grid>  
-      </Grid>
+            </Typography>
+          </Grid>
+        </Grid>
       </Fragment>
     </MuiThemeProvider>
   )

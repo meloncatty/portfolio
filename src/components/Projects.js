@@ -13,7 +13,7 @@ const styles = {
   card: {
     width: 345,
     marginTop: 20,
-    height: 300,
+    height: 300
   },
   media: {
     height: 0,
@@ -29,13 +29,13 @@ const Projects = (props) => {
   const { classes } = props
   return (
     <Fragment>
-      <Typography 
+      <Typography
         className={classes.heading}
         align='center'
         variant='display1'>
         Projects
       </Typography>
-      <Grid 
+      <Grid
         container
         className={classes.root}
         justify='space-around'
@@ -50,12 +50,12 @@ const Projects = (props) => {
             <CardContent>
               <Typography variant='headline' component='h2'>
                 Movie Tracker
-            </Typography>
+              </Typography>
             </CardContent>
             <CardActions>
               <Button size='small' color='primary'>
                 Github
-            </Button>
+              </Button>
             </CardActions>
           </Card>
         </Grid>
@@ -88,12 +88,12 @@ const Projects = (props) => {
             <CardContent>
               <Typography gutterBottom variant='headline' component='h2'>
                 Share Open Source
-            </Typography>
+              </Typography>
             </CardContent>
             <CardActions>
               <Button size='small' color='primary'>
                 Github
-            </Button>
+              </Button>
             </CardActions>
           </Card>
         </Grid>
