@@ -2,13 +2,77 @@ import React from 'react'
 import { Grid, withStyles, MuiThemeProvider, withTheme, Typography } from '@material-ui/core'
 import '../styles/skillsAnimation.css'
 
-const styles = {
+const Skills = (props) => {
+  const { classes } = props
+  return (
+    <MuiThemeProvider theme={props.theme}>
+      <Typography
+        className={classes.heading}
+        variant='display1'
+        align='center'
+      >
+        Skills
+      </Typography>
+      <Grid
+        className={classes.grid}
+        container justify='center'
+        direction='column'
+        alignItems='center'
+        style={{ background: props.theme.palette.primary.main }}>
+        <Grid item>
+          <div className={classes.menuBar}>
+            <div className={classes.closeButton} />
+            <div className={classes.minimizeButton} />
+            <div className={classes.zoomButton} />
+          </div>
+          <div className={classes.terminalScreen}>
+            <p><span className={classes.green}>(^‿^)b</span><span className={classes.span}> ~ always be coding</span> </p>
+            <p className={classes.text}>desktop$ cd skills</p>
+            <p className={classes.text}>skills$ ls</p>
+            <Grid container>
+              <Grid item>
+                <ul className={classes.skills}>
+                  <li>javascript</li>
+                  <li>html5</li>
+                  <li>css3</li>
+                  <li>sass</li>
+                  <li>git</li>
+                </ul>
+              </Grid>
+              <Grid item>
+                <ul className={classes.skills}>
+                  <li>react</li>
+                  <li>redux</li>
+                  <li>node</li>
+                  <li>express</li>
+                  <li>knex</li>
+                </ul>
+              </Grid>
+              <Grid item>
+                <ul className={classes.skills}>
+                  <li>postgresql</li>
+                  <li>jest</li>
+                  <li>enzyme</li>
+                  <li>mocha</li>
+                  <li>chai</li>
+                </ul>
+              </Grid>
+            </Grid>
+            <p className={classes.cursor}>><span className='cursorBlink'>_</span></p>
+          </div>
+        </Grid>
+      </Grid>
+    </MuiThemeProvider>
+  )
+}
+
+const styles = theme => ({
   grid: {
     height: 500
   },
   heading: {
-    color: '#000000',
-    paddingTop: 40
+    paddingTop: 40,
+    background: theme.palette.primary.main
   },
   green: {
     color: '#43a047'
@@ -65,7 +129,8 @@ const styles = {
     margin: '0 auto',
     padding: '20px',
     borderBottomLeftRadius: '5px',
-    borderBottomRightRadius: '5px'
+    borderBottomRightRadius: '5px',
+    fontFamily: 'IBM Plex Mono'
   },
   p: {
     position: 'relative',
@@ -96,70 +161,6 @@ const styles = {
   cursor: {
     color: '#fff'
   }
-}
-
-const Skills = (props) => {
-  const { classes } = props
-  return (
-    <MuiThemeProvider theme={props.theme}>
-      <Typography
-        className={classes.heading}
-        variant='display1'
-        align='center'
-        style={{ background: props.theme.palette.primary.main }}>
-        Skills
-      </Typography>
-      <Grid
-        className={classes.grid}
-        container justify='center'
-        direction='column'
-        alignItems='center'
-        style={{ background: props.theme.palette.primary.main }}>
-        <Grid item>
-          <div className={classes.menuBar}>
-            <div className={classes.closeButton} />
-            <div className={classes.minimizeButton} />
-            <div className={classes.zoomButton} />
-          </div>
-          <div className={classes.terminalScreen}>
-            <p><span className={classes.green}>(^‿^)b</span><span className={classes.span}> ~ always be coding</span> </p>
-            <p className={classes.text}>desktop$ cd skills</p>
-            <p className={classes.text}>skills$ ls</p>
-            <Grid container>
-              <Grid item>
-                <ul className={classes.skills}>
-                  <li>javascript</li>
-                  <li>html5</li>
-                  <li>css3</li>
-                  <li>sass</li>
-                  <li>git</li>
-                </ul>
-              </Grid>
-              <Grid item>
-                <ul className={classes.skills}>
-                  <li>react</li>
-                  <li>redux</li>
-                  <li>node</li>
-                  <li>express</li>
-                  <li>knex</li>
-                </ul>
-              </Grid>
-              <Grid item>
-                <ul className={classes.skills}>
-                  <li>postgresql</li>
-                  <li>jest</li>
-                  <li>enzyme</li>
-                  <li>mocha</li>
-                  <li>chai</li>
-                </ul>
-              </Grid>
-            </Grid>
-            <p className={classes.cursor}>><span className='cursorBlink'>_</span></p>
-          </div>
-        </Grid>
-      </Grid>
-    </MuiThemeProvider>
-  )
-}
+})
 
 export default withTheme()(withStyles(styles)(Skills))
