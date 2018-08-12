@@ -30,7 +30,7 @@ class OpenSource extends Component {
         </Typography>
         <Grid
           container
-          className={classes.formContainer}
+          className={classes.osContainer}
           justify='center'>
           <Grid item>
             <Card className={classes.card}>
@@ -90,27 +90,19 @@ class OpenSource extends Component {
 
 const styles = theme => ({
   heading: {
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     padding: 20
   },
   emoji: {
     fontSize: '1.5em'
   },
-  formContainer: {
+  osContainer: {
     height: 'auto',
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     padding: 50
-  },
-  button: {
-    backgroundColor: theme.palette.primary.main,
-    '&:hover': {
-      backgroundColor: theme.palette.primary.light
-    },
-    marginBottom: 10
   },
   card: {
     width: 590,
-    // marginTop: 20,
   },
   squidCat: {
     width: 50,
