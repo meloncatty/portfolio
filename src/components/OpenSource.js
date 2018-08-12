@@ -71,7 +71,7 @@ class OpenSource extends Component {
                     here</a>
                   </Typography>
                   <Typography>
-                    Althought this feature was approved and merged into the master branch,
+                    Although this feature was approved and merged into the master branch,
                     it has since been removed <span role='img' aria-label='crying emoji' className={classes.emoji}>😭</span> but not without good reason! GitHub has since then
                     implemented the feature into their product. GitHub has also reached
                     out to this community and has offered to work with them in implementing
