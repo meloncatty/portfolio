@@ -30,7 +30,7 @@ class OpenSource extends Component {
         </Typography>
         <Grid
           container
-          className={classes.formContainer}
+          className={classes.osContainer}
           justify='center'>
           <Grid item>
             <Card className={classes.card}>
@@ -71,7 +71,7 @@ class OpenSource extends Component {
                     here</a>
                   </Typography>
                   <Typography>
-                    Althought this feature was approved and merged into the master branch,
+                    Although this feature was approved and merged into the master branch,
                     it has since been removed <span role='img' aria-label='crying emoji' className={classes.emoji}>😭</span> but not without good reason! GitHub has since then
                     implemented the feature into their product. GitHub has also reached
                     out to this community and has offered to work with them in implementing
@@ -90,27 +90,19 @@ class OpenSource extends Component {
 
 const styles = theme => ({
   heading: {
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     padding: 20
   },
   emoji: {
     fontSize: '1.5em'
   },
-  formContainer: {
+  osContainer: {
     height: 'auto',
-    background: theme.palette.secondary.main,
+    background: theme.palette.primary.main,
     padding: 50
-  },
-  button: {
-    backgroundColor: theme.palette.primary.main,
-    '&:hover': {
-      backgroundColor: theme.palette.primary.light
-    },
-    marginBottom: 10
   },
   card: {
     width: 590,
-    // marginTop: 20,
   },
   squidCat: {
     width: 50,
